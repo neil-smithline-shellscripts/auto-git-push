@@ -13,6 +13,6 @@ git commit -q -m 'automated update'
 git push -q
 #+END_SRC
 
-The use of the =-q= flags will make =git= be quiet unless an error occurs so =crontab= will not send email unless an error occurs.
+The =-q= flags will silence =git= unless an error occurs. This prevents =crontab= from sending email unless an actual error has occurred.
 
-The script also tries to set a reasonable =PATH=. I guess that on all *NIX systems it will run without modification. I'll leave configuring it for Cygwin as an exercise to the reader :-)
+The script also tries to set a reasonable =PATH=. My guess is that this script will run on *NIX systems without modification. I'll leave configuring it for Cygwin as an exercise to the reader :-)
